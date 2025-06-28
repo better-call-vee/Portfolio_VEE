@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-bgc: #bfdbfe; /* light: sky-200 */
+  --color-bbgc: #ffffff;
+  --color-txt: #1e293b; /* slate-800 */
+  --color-primary: #422ad5; /* light-blue-600 */
+  --color-prm: #422ad5;
+  --color-sry: #5d3e1d; /* amber-500 */
+  --color-accent: #10b981; /* emerald-500 */
+  --color-info: #0ea5e9; /* sky-500 */
+  --color-success: #22c55e; /* green-500 */
+  --color-warning: #fbbf24; /* yellow-400 */
+  --color-error: #ef4444; /* red-500 */
+  --color-divider: #1e293b; /* slate-800 */
+  --icon-hover-bg: #e2e8f0; /* light-gray */
+
+  --color-primary-text: #ffffff; /* Text that goes on top of the primary color */
+  --color-secondary: #f8fafc;
+  --color-accent: #10b981;
+  --color-text: #111827;
+  --color-background: #ffffff;
+  --color-nav-scrolled-bg: rgba(240, 189, 255, 0.9);
+
+  /* --- NEW HOVER COLORS --- */
+  --color-nav-hover-bg: var(--color-primary); /* Uses the new primary color */
+  --color-nav-hover-text: var(--color-primary-text); /* Uses the new primary text color */
+}
+
+@layer base {
+  [data-theme="dark"] {
+    --color-bgc: #1f2937; /* slate-800 */
+    --color-bbgc: #1f2937;
+    --color-txt: #f1f5f9; /* slate-100 */
+    --color-primary: #f0bdff; /* sky-400 */
+    --color-prm: #f0bdff;
+    --color-sry: #fcd34d; /* yellow-300 */
+    --color-accent: #6ee7b7; /* emerald-300 */
+    --color-info: #38bdf8; /* sky-400 */
+    --color-success: #4ade80; /* green-300 */
+    --color-warning: #fde047; /* yellow-300 */
+    --color-error: #f87171; /* red-400 */
+    --color-divider: #94a3b8; /* slate-400 */
+    --icon-hover-bg: #374151; /* gray-700 */
+
+    --color-primary-text: #111827;
+    --color-secondary: #1f2937;
+    --color-accent: #34d399;
+    --color-text: #f3f4f6;
+    --color-background: #111827;
+    --color-nav-scrolled-bg: rgba(131, 8, 131, 0.9);
+
+    --color-nav-hover-bg: #f0bdff;
+    --color-nav-hover-text: #000000; /* Black text for the hover background */
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.active-link {
+  background-color: var(--color-primary) !important;
+  color: var(--color-background) !important;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .active-link {
+  background-color: rgba(240, 189, 255, 0.9) !important;
+  color: #111827 !important;
+}
+
+[data-theme="dark"] .dark-noise-bg {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+  background-size: 4px 4px;
+}
