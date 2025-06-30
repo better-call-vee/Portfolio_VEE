@@ -38,7 +38,7 @@ const Projects = ({ theme }) => {
             ),
             images: ['/p2-1.png', '/p2-2.png', '/p2-3.png', '/p2-4.png', '/p2-5.png'],
             techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Firebase', 'Tailwind CSS', 'DaisyUI'],
-            repoLink: '#',
+            repoLink: 'https://github.com/better-call-vee/Learnify',
             liveLink: 'https://learnify009.web.app/',
         },
     ];
