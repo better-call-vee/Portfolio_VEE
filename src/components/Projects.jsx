@@ -41,6 +41,31 @@ const Projects = ({ theme }) => {
             repoLink: 'https://github.com/better-call-vee/Learnify',
             liveLink: 'https://learnify009.web.app/',
         },
+
+        {
+            id: 3,
+            title: 'Opportunest',
+            shortDescription: 'A full-stack Scholarship Management System featuring a secure, multi-role architecture (Admin, Moderator, User), advanced data handling with Tanstack Query, and a dynamic, interactive UI.',
+            longDescription: (
+                <div className="space-y-4">
+                    <p>A comprehensive MERN-stack platform designed to connect students with global scholarship opportunities. This project showcases a robust backend with complex database aggregations and a polished, professional frontend built for an exceptional user experience.</p>
+
+                    <h4 className="text-xl font-semibold pt-2">Development Highlights:</h4>
+                    <ul className="list-disc list-inside space-y-2">
+                        <li>
+                            <strong>Engineered a Secure Image Upload Proxy:</strong> Solved a critical CORS error by creating a backend route to securely handle file uploads to a third-party service (ImgBB), ensuring the client-side never exposes the API key.
+                        </li>
+                        <li>
+                            <strong>Resolved a Server Race Condition:</strong> Debugged and fixed intermittent `500 Internal Server Errors` on the deployed Vercel server by restructuring the application's startup logic to guarantee the MongoDB connection is established *before* the server begins accepting API requests.
+                        </li>
+                    </ul>
+                </div>
+            ),
+            images: ['/p3-1.png', '/p3-2.png', '/p3-3.png', '/p3-4.png'],
+            techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Tanstack Query', 'Firebase', 'Vercel', 'Framer Motion', 'GSAP', 'Matter.js', 'Recharts'],
+            repoLink: 'https://github.com/better-call-vee/opportunest',
+            liveLink: 'https://opportunest9.web.app/',
+        },
     ];
 
     const [selectedProject, setSelectedProject] = useState(null);
