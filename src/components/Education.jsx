@@ -24,7 +24,7 @@ const Education = ({ theme }) => {
         {
             degree: 'B.Sc in Computer Science & Engineering',
             institution: 'Bangladesh University of Business & Technology',
-            details: 'CGPA: 3.98 out of 4.00',
+            details: 'CGPA: 3.99 out of 4.00',
             status: getAcademicStatus(), // Dynamic status
             icon: '🎓'
         },
