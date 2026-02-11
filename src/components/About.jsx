@@ -44,6 +44,7 @@ const About = ({ theme }) => {
                 </h2>
 
                 <div className="grid md:grid-cols-2 gap-8">
+                    {/* Personality / Hobbies Card */}
                     <AboutCardWrapper theme={theme}>
                         <div className="text-lg leading-relaxed h-full" style={{ color: 'var(--color-text)' }}>
                             I'm a peace-loving and optimistic person, driven by loyalty and a strong work ethic, especially when deadlines are near. Outside of coding, I'm passionate about activities like{' '}
@@ -60,9 +61,10 @@ const About = ({ theme }) => {
                         </div>
                     </AboutCardWrapper>
 
+                    {/* Professional Focus Card - UPDATED */}
                     <AboutCardWrapper theme={theme}>
                         <p className="text-lg leading-relaxed h-full" style={{ color: 'var(--color-text)' }}>
-                            As a dedicated <span className="font-semibold" style={{ color: highlightColor }}>Computer Science enthusiast</span>, I am channeling my passion for problem-solving into the fields of <strong style={{ color: highlightColor }}>Artificial Intelligence</strong>, <strong style={{ color: highlightColor }}>Machine Learning</strong>, and <strong style={{ color: highlightColor }}>Data Science</strong>. I am actively seeking a <strong style={{ color: highlightColor }}>remote internship</strong> or <strong style={{ color: highlightColor }}>job</strong> where I can contribute to real-world <strong style={{ color: highlightColor }}>projects</strong>. Concurrently, I am pursuing <strong style={{ color: highlightColor }}>research opportunities</strong> to help push the boundaries of these exciting technologies.
+                            As a dedicated <span className="font-semibold" style={{ color: highlightColor }}>Computer Science enthusiast</span>, I am currently pivoting my focus toward <strong style={{ color: highlightColor }}>System Administration</strong> and understanding <strong style={{ color: highlightColor }}>Artificial Intelligence</strong> from the ground up. I am actively seeking <strong style={{ color: highlightColor }}>hands-on opportunities</strong>—whether internships or junior roles—where I can apply my skills in real-world environments. My goal is to solve practical infrastructure and automation challenges rather than pursuing purely theoretical research.
                         </p>
                     </AboutCardWrapper>
                 </div>
