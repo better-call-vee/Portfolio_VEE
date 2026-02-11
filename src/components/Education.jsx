@@ -2,22 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import DotGrid from './DotGrid';
 
-// We can use the same academic status logic here
-const getAcademicStatus = () => {
-    const startYearOfUni = 2024;
-    const currentYear = new Date().getFullYear();
-    const yearInUni = currentYear - startYearOfUni + 1;
-    switch (yearInUni) {
-        case 1: return "1st Year Running";
-        case 2: return "2nd Year Running";
-        case 3: return "3rd Year Running";
-        case 4: return "Final Year Running";
-        default:
-            if (yearInUni > 4) return "Graduated";
-            return "Future Student";
-    }
-};
-
 const Education = ({ theme }) => {
 
     const educationData = [
@@ -25,7 +9,7 @@ const Education = ({ theme }) => {
             degree: 'B.Sc in Computer Science & Engineering',
             institution: 'Bangladesh University of Business & Technology',
             details: 'CGPA: 3.99 out of 4.00',
-            status: getAcademicStatus(), // Dynamic status
+            status: 'Discontinued after 3rd Semester', 
             icon: '🎓'
         },
         {

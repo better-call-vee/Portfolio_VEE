@@ -3,8 +3,6 @@ import { motion } from 'framer-motion';
 import RotatingText from './RotatingText';
 import DotGrid from './DotGrid';
 
-// This wrapper now uses your --bbgc variable for the background.
-// SpotlightCard is no longer used here to simplify the design as requested.
 const AboutCardWrapper = ({ children, theme }) => {
     return (
         <div
@@ -17,23 +15,7 @@ const AboutCardWrapper = ({ children, theme }) => {
     );
 };
 
-const getAcademicStatus = () => {
-    const startYearOfUni = 2024;
-    const currentYear = new Date().getFullYear();
-    const yearInUni = currentYear - startYearOfUni + 1;
-    switch (yearInUni) {
-        case 1: return "1st year";
-        case 2: return "2nd year";
-        case 3: return "3rd year";
-        case 4: return "Final year";
-        default:
-            if (yearInUni > 4) return "Graduated";
-            return "Future Student";
-    }
-};
-
 const About = ({ theme }) => {
-    const academicStatus = getAcademicStatus();
     const myPassions = ["Fitness", "Music", "Singing", "Football"];
     const highlightColor = theme === 'dark' ? '#f0bdff' : 'var(--color-primary)';
 
@@ -80,7 +62,7 @@ const About = ({ theme }) => {
 
                     <AboutCardWrapper theme={theme}>
                         <p className="text-lg leading-relaxed h-full" style={{ color: 'var(--color-text)' }}>
-                            As a dedicated <span className="font-semibold" style={{ color: highlightColor }}>{academicStatus}</span> Computer Science student, I am channeling my passion for problem-solving into the fields of <strong style={{ color: highlightColor }}>Artificial Intelligence</strong>, <strong style={{ color: highlightColor }}>Machine Learning</strong>, and <strong style={{ color: highlightColor }}>Data Science</strong>. I am actively seeking a <strong style={{ color: highlightColor }}>remote internship</strong> or <strong style={{ color: highlightColor }}>job</strong> where I can contribute to real-world <strong style={{ color: highlightColor }}>projects</strong>. Concurrently, I am pursuing <strong style={{ color: highlightColor }}>research opportunities</strong> to help push the boundaries of these exciting technologies.
+                            As a dedicated <span className="font-semibold" style={{ color: highlightColor }}>Computer Science enthusiast</span>, I am channeling my passion for problem-solving into the fields of <strong style={{ color: highlightColor }}>Artificial Intelligence</strong>, <strong style={{ color: highlightColor }}>Machine Learning</strong>, and <strong style={{ color: highlightColor }}>Data Science</strong>. I am actively seeking a <strong style={{ color: highlightColor }}>remote internship</strong> or <strong style={{ color: highlightColor }}>job</strong> where I can contribute to real-world <strong style={{ color: highlightColor }}>projects</strong>. Concurrently, I am pursuing <strong style={{ color: highlightColor }}>research opportunities</strong> to help push the boundaries of these exciting technologies.
                         </p>
                     </AboutCardWrapper>
                 </div>
